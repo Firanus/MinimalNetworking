@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MinimalNetworking_Example' do
+  pod 'MinimalNetworking', :path => '../'
+
+  target 'MinimalNetworking_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
