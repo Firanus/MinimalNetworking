@@ -7,6 +7,6 @@
 //
 
 import Foundation
-protocol POSTBodyEncodable {
+public protocol POSTBodyEncodable {
     var asFormUrlEncoded: String { get }
 }

@@ -6,9 +6,9 @@
 //  Copyright © 2018 AND Digital. All rights reserved.
 //
 
-import Foundation
-protocol URLSessionDataTaskProtocol {
-    func resume()
-}
-
-extension URLSessionDataTask: URLSessionDataTaskProtocol {}
+//import Foundation
+//public protocol URLSessionDataTaskProtocol {
+//    func resume()
+//}
+//
+//extension URLSessionDataTask: URLSessionDataTaskProtocol {}

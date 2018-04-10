@@ -12,9 +12,12 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		607FACEC1AFB9204008FA782 /* HTTPServiceTests_GET.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* HTTPServiceTests_GET.swift */; };
 		B9119A4ECD7C66650C65AE39 /* Pods_MinimalNetworking_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF4E8F50CBA96B139399940 /* Pods_MinimalNetworking_Tests.framework */; };
 		EFC4EFA4BAD143466623F4B1 /* Pods_MinimalNetworking_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3095B3D08640A3E4E1320B3 /* Pods_MinimalNetworking_Example.framework */; };
+		F50D4C94207CF1AD00562132 /* TestUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50D4C92207CF13900562132 /* TestUtilities.swift */; };
+		F5A761D4207CEA9A0099CB75 /* URLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A761D0207CE7510099CB75 /* URLSessionMock.swift */; };
+		F5A761D5207CEA9C0099CB75 /* URLSessionDataTaskMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A761D2207CE7BF0099CB75 /* URLSessionDataTaskMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,13 +42,16 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* MinimalNetworking_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinimalNetworking_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		607FACEB1AFB9204008FA782 /* HTTPServiceTests_GET.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPServiceTests_GET.swift; sourceTree = "<group>"; };
 		6E65A5A8BE278CAC193010B8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		77E5786E406BB86F7B213E15 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		BF8CA9A4F135A9EBD9597263 /* Pods-MinimalNetworking_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MinimalNetworking_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MinimalNetworking_Tests/Pods-MinimalNetworking_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F265904AF836669175F8C510 /* Pods-MinimalNetworking_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MinimalNetworking_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MinimalNetworking_Example/Pods-MinimalNetworking_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F3095B3D08640A3E4E1320B3 /* Pods_MinimalNetworking_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MinimalNetworking_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F322AA7BA0F20026CA1EE12B /* Pods-MinimalNetworking_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MinimalNetworking_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MinimalNetworking_Tests/Pods-MinimalNetworking_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F50D4C92207CF13900562132 /* TestUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUtilities.swift; sourceTree = "<group>"; };
+		F5A761D0207CE7510099CB75 /* URLSessionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionMock.swift; sourceTree = "<group>"; };
+		F5A761D2207CE7BF0099CB75 /* URLSessionDataTaskMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskMock.swift; sourceTree = "<group>"; };
 		FBF4E8F50CBA96B139399940 /* Pods_MinimalNetworking_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MinimalNetworking_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -124,7 +130,9 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				607FACEB1AFB9204008FA782 /* HTTPServiceTests_GET.swift */,
+				F5A761CF207CE7260099CB75 /* Mocks */,
+				F50D4C91207CF11A00562132 /* Utilities */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -157,6 +165,23 @@
 				F322AA7BA0F20026CA1EE12B /* Pods-MinimalNetworking_Tests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F50D4C91207CF11A00562132 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F50D4C92207CF13900562132 /* TestUtilities.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		F5A761CF207CE7260099CB75 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				F5A761D0207CE7510099CB75 /* URLSessionMock.swift */,
+				F5A761D2207CE7BF0099CB75 /* URLSessionDataTaskMock.swift */,
+			);
+			name = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,9 +328,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MinimalNetworking_Tests/Pods-MinimalNetworking_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MinimalNetworking/MinimalNetworking.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MinimalNetworking.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -379,7 +407,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				F5A761D4207CEA9A0099CB75 /* URLSessionMock.swift in Sources */,
+				607FACEC1AFB9204008FA782 /* HTTPServiceTests_GET.swift in Sources */,
+				F50D4C94207CF1AD00562132 /* TestUtilities.swift in Sources */,
+				F5A761D5207CEA9C0099CB75 /* URLSessionDataTaskMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

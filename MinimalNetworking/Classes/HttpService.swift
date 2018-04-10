@@ -7,20 +7,20 @@
 //
 
 import Foundation
-class HttpService: HttpServiceProtocol {
+public class HttpService {
     
     enum supportedHTTPMethod {
         case GET
         case POST(POSTBodyEncodable)
     }
     
-    private let session: URLSessionProtocol
+    private let session: URLSession
     
-    init(session: URLSessionProtocol = URLSession(configuration: .default)) {
+    public init(session: URLSession = URLSession(configuration: .default)) {
         self.session = session
     }
     
-    func get<T: Codable>(url urlString: String, responseContentType: ResponseContentType, additionalHeaders: [String:String] = [:], completion: @escaping (NetworkResponse<T?>) -> Void) -> URLSessionDataTaskProtocol? {
+    public func get<T: Codable>(url urlString: String, responseContentType: ResponseContentType, additionalHeaders: [String:String] = [:], completion: @escaping (NetworkResponse<T?>) -> Void) -> URLSessionDataTask? {
         if let url = URL(string: urlString) {
             let request = createRequest(to: url, withHttpMethod: .GET, andHeaders: additionalHeaders)
             let task = createDataTask(with: request, responseContentType: responseContentType, completion: completion)
@@ -32,7 +32,7 @@ class HttpService: HttpServiceProtocol {
         }
     }
     
-    func post<T: Codable>(url urlString: String, body: POSTBodyEncodable, responseContentType: ResponseContentType, additionalHeaders: [String:String] = [:], completion: @escaping (NetworkResponse<T?>) -> Void) -> URLSessionDataTaskProtocol? {
+    public func post<T: Codable>(url urlString: String, body: POSTBodyEncodable, responseContentType: ResponseContentType, additionalHeaders: [String:String] = [:], completion: @escaping (NetworkResponse<T?>) -> Void) -> URLSessionDataTask? {
         
         if let url = URL(string: urlString) {
             let request = createRequest(to: url, withHttpMethod: .POST(body), andHeaders: additionalHeaders)
@@ -63,7 +63,7 @@ class HttpService: HttpServiceProtocol {
         return request
     }
     
-    private func createDataTask<T: Codable>(with request: URLRequest, responseContentType: ResponseContentType, completion: @escaping (NetworkResponse<T?>) -> Void) -> URLSessionDataTaskProtocol {
+    private func createDataTask<T: Codable>(with request: URLRequest, responseContentType: ResponseContentType, completion: @escaping (NetworkResponse<T?>) -> Void) -> URLSessionDataTask {
         let task = session.dataTask(with: request, completionHandler: { (data, urlResponse, error) in
             var networkResponse: NetworkResponse<T?>
             do {
