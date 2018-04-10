@@ -1,0 +1,16 @@
+PODS:
+  - MinimalNetworking (0.1.0)
+
+DEPENDENCIES:
+  - MinimalNetworking (from `../`)
+
+EXTERNAL SOURCES:
+  MinimalNetworking:
+    :path: ../
+
+SPEC CHECKSUMS:
+  MinimalNetworking: 864458c558ba0a4affeb46c3836e8aa9ea44c902
+
+PODFILE CHECKSUM: 148104ad380d5e1a17be970bf9fb861136bb1cdf
+
+COCOAPODS: 1.4.0

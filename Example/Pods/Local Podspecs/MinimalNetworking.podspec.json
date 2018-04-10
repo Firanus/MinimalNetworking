@@ -1,0 +1,22 @@
+{
+  "name": "MinimalNetworking",
+  "version": "0.1.0",
+  "summary": "A short description of MinimalNetworking.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Firanus/MinimalNetworking",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Firanus": "ivan.useful@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Firanus/MinimalNetworking.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MinimalNetworking/Classes/**/*"
+}

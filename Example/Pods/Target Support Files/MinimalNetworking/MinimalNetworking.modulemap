@@ -1,0 +1,6 @@
+framework module MinimalNetworking {
+  umbrella header "MinimalNetworking-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,767 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B3A120CC2AC23279D5928DC64C8A15B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		1023A0A2E20B744D583D5F0CE6A5DC5F /* Pods-MinimalNetworking_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F17CE5A7A7CA091A1B20D835584D32EE /* Pods-MinimalNetworking_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1927B6A600C13C21F07C6B5BF560667C /* ParserFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69F0DC590799BCF04796486CE805175 /* ParserFactory.swift */; };
+		27EC73CCF128320E4F4B923FB97BD6FA /* MinimalNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F438B5F47FDC14E89EBD0448C082781 /* MinimalNetworking-dummy.m */; };
+		3954D906573C57BFE155EB15A7C46B6A /* Pods-MinimalNetworking_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE5088E9C95D1055D8FC50AD801C0E2 /* Pods-MinimalNetworking_Example-dummy.m */; };
+		4191E7DE0079AD3C1DBDCA18669ABDFA /* HttpServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F38D342E911AC011910E51B6EEBAB /* HttpServiceProtocol.swift */; };
+		4F0C639E1475F371EBA8C41980FD15CE /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545FEBE2209E792E6D38AC76475A03D0 /* URLSessionProtocol.swift */; };
+		5BEA6C61E6FCD1AE96C699BDEA87961E /* MinimalNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C1105F2CD597304CC7FA819361E24BBB /* MinimalNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74A97BF43F379B5DB2A7B706F74EC998 /* JsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08E8F272C3DF01D5A86450202A52FE6 /* JsonParser.swift */; };
+		7DFE256FB09FA12158A0043505870CDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		9B2C2310A1FC7825464195F7499FB4B8 /* POSTBodyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D89FEEA8DD271FC0B1BBC4335EB769 /* POSTBodyEncodable.swift */; };
+		9C506B5647B9C449A3A843A5CFF81AB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		A5AA77231ABA641A771B1F5EB6C77CF8 /* HttpResponseParserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F321D7D1D9008B8B8E15D5CFC84B55 /* HttpResponseParserProtocol.swift */; };
+		BF91FBBF9A878DD8DC28B21BD05B0722 /* Pods-MinimalNetworking_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 33A0D2077BD8B4FE4E42DD8A5DDC3D03 /* Pods-MinimalNetworking_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C805820FB6B0A322143BB71122FA050B /* URLSessionDataTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063ACFFE28F3D0FA819BBC90DC50D83C /* URLSessionDataTaskProtocol.swift */; };
+		DE98D9F5C21DF1F5922A860FA9A7116B /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C2B1BB76C3DE0143D4CA86AADA9600 /* HttpService.swift */; };
+		FC21BE63AA8E9F73B4E2CC09B0B649CF /* Pods-MinimalNetworking_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C594A42361A83703B6591751C39B98 /* Pods-MinimalNetworking_Tests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		111DD885E2C1B1FC94905446C1C45A0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39B5A7692A3A37B8709B369D5BDD862A;
+			remoteInfo = MinimalNetworking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03F321D7D1D9008B8B8E15D5CFC84B55 /* HttpResponseParserProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HttpResponseParserProtocol.swift; sourceTree = "<group>"; };
+		063ACFFE28F3D0FA819BBC90DC50D83C /* URLSessionDataTaskProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLSessionDataTaskProtocol.swift; path = MinimalNetworking/Classes/URLSessionDataTaskProtocol.swift; sourceTree = "<group>"; };
+		0D3B6FDA74147A9B18FD691B1A91DF7A /* Pods-MinimalNetworking_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MinimalNetworking_Tests.modulemap"; sourceTree = "<group>"; };
+		18C06E37F34BE560E5F44D2AD39647D5 /* Pods-MinimalNetworking_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MinimalNetworking_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		22CD553306308C3C191C288AD56C5A72 /* MinimalNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MinimalNetworking.xcconfig; sourceTree = "<group>"; };
+		33A0D2077BD8B4FE4E42DD8A5DDC3D03 /* Pods-MinimalNetworking_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MinimalNetworking_Example-umbrella.h"; sourceTree = "<group>"; };
+		352DE043A85A629AACA34473E387A78F /* Pods_MinimalNetworking_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MinimalNetworking_Example.framework; path = "Pods-MinimalNetworking_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B26F30AE90BC79AB312542864DAEC49 /* MinimalNetworking.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = MinimalNetworking.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		48E50E230C850B8A74C51464919B6B69 /* Pods-MinimalNetworking_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MinimalNetworking_Example.modulemap"; sourceTree = "<group>"; };
+		4BEF14197BCA12B069E4873DEF1CF0C3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		507B4C880EE3D2147603296BE4AD30C1 /* Pods-MinimalNetworking_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MinimalNetworking_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		545FEBE2209E792E6D38AC76475A03D0 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLSessionProtocol.swift; path = MinimalNetworking/Classes/URLSessionProtocol.swift; sourceTree = "<group>"; };
+		5EC13F7A4109653CE6CB9243C9357682 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61C594A42361A83703B6591751C39B98 /* Pods-MinimalNetworking_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MinimalNetworking_Tests-dummy.m"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		675F73BB8BC678C061D5508B935C581A /* Pods-MinimalNetworking_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MinimalNetworking_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		6A126C9CD7AD0133FD12D9F261E32E00 /* Pods-MinimalNetworking_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MinimalNetworking_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6F438B5F47FDC14E89EBD0448C082781 /* MinimalNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MinimalNetworking-dummy.m"; sourceTree = "<group>"; };
+		7F82356401B0ECE349892558A47D9AD0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		86C2B1BB76C3DE0143D4CA86AADA9600 /* HttpService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpService.swift; path = MinimalNetworking/Classes/HttpService.swift; sourceTree = "<group>"; };
+		88D89FEEA8DD271FC0B1BBC4335EB769 /* POSTBodyEncodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = POSTBodyEncodable.swift; path = MinimalNetworking/Classes/POSTBodyEncodable.swift; sourceTree = "<group>"; };
+		89770968C27D4F694FFF880553646C8C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DE5088E9C95D1055D8FC50AD801C0E2 /* Pods-MinimalNetworking_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MinimalNetworking_Example-dummy.m"; sourceTree = "<group>"; };
+		8E0A560F22B6EFD321A4F227F9F946D4 /* Pods_MinimalNetworking_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MinimalNetworking_Tests.framework; path = "Pods-MinimalNetworking_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		941B410FC6AF3B5381D9B98E985E8DBC /* Pods-MinimalNetworking_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MinimalNetworking_Tests-resources.sh"; sourceTree = "<group>"; };
+		9DD59BC848A59FE886CAB7D5F563037E /* Pods-MinimalNetworking_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MinimalNetworking_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A31DB5CCB88B7591503A60677B361A71 /* Pods-MinimalNetworking_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MinimalNetworking_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		A69F0DC590799BCF04796486CE805175 /* ParserFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ParserFactory.swift; sourceTree = "<group>"; };
+		A7497621E886198AC830197E81ADB24C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		A9855E2FF6745158C791FE972E55BBEC /* Pods-MinimalNetworking_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MinimalNetworking_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		ADC0252796B7FEAF7707D2CCD6164B07 /* Pods-MinimalNetworking_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MinimalNetworking_Example-frameworks.sh"; sourceTree = "<group>"; };
+		C1105F2CD597304CC7FA819361E24BBB /* MinimalNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MinimalNetworking-umbrella.h"; sourceTree = "<group>"; };
+		CE0F38D342E911AC011910E51B6EEBAB /* HttpServiceProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpServiceProtocol.swift; path = MinimalNetworking/Classes/HttpServiceProtocol.swift; sourceTree = "<group>"; };
+		D57BEF72FAC26487A1A88E5F780D4413 /* MinimalNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MinimalNetworking.framework; path = MinimalNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D931B37D818ABD0DF275B4E8FBA36771 /* MinimalNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MinimalNetworking-prefix.pch"; sourceTree = "<group>"; };
+		DEAEEB44812F99B8D647C18B7FADF5C5 /* Pods-MinimalNetworking_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MinimalNetworking_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		DECD7E462840A96D35576FF9647A523D /* MinimalNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MinimalNetworking.modulemap; sourceTree = "<group>"; };
+		EAC2724618DE2E3368D5052DB24E1766 /* Pods-MinimalNetworking_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MinimalNetworking_Example.release.xcconfig"; sourceTree = "<group>"; };
+		F08E8F272C3DF01D5A86450202A52FE6 /* JsonParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JsonParser.swift; sourceTree = "<group>"; };
+		F17CE5A7A7CA091A1B20D835584D32EE /* Pods-MinimalNetworking_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MinimalNetworking_Tests-umbrella.h"; sourceTree = "<group>"; };
+		FDFA92F2F43E2C09F761989440FEF136 /* Pods-MinimalNetworking_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MinimalNetworking_Example-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63AC5410E0BAD0B9BD68E051BECA0F39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B3A120CC2AC23279D5928DC64C8A15B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F066C5D1252046FAB4C41F8C3A3CD83F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DFE256FB09FA12158A0043505870CDF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD84FA3457696A027C58C8D01C2D7E92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C506B5647B9C449A3A843A5CFF81AB5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3966B3F13E37108306AA4C9EDD27127D /* MinimalNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				86C2B1BB76C3DE0143D4CA86AADA9600 /* HttpService.swift */,
+				CE0F38D342E911AC011910E51B6EEBAB /* HttpServiceProtocol.swift */,
+				88D89FEEA8DD271FC0B1BBC4335EB769 /* POSTBodyEncodable.swift */,
+				063ACFFE28F3D0FA819BBC90DC50D83C /* URLSessionDataTaskProtocol.swift */,
+				545FEBE2209E792E6D38AC76475A03D0 /* URLSessionProtocol.swift */,
+				93228295286CC4B0D1C59395DAA77987 /* Pod */,
+				6E49656D338187A7FC97A990971883E8 /* Response Parser */,
+				B4F0CE9A58AFD4F6A8624E0EFF1267A8 /* Support Files */,
+			);
+			name = MinimalNetworking;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		6E49656D338187A7FC97A990971883E8 /* Response Parser */ = {
+			isa = PBXGroup;
+			children = (
+				03F321D7D1D9008B8B8E15D5CFC84B55 /* HttpResponseParserProtocol.swift */,
+				F08E8F272C3DF01D5A86450202A52FE6 /* JsonParser.swift */,
+				A69F0DC590799BCF04796486CE805175 /* ParserFactory.swift */,
+			);
+			name = "Response Parser";
+			path = "MinimalNetworking/Classes/Response Parser";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				E89ADEC78A23BD55693CE206F8D7B518 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				E824A498F5D8C86D596211277BD748AC /* Products */,
+				F2B2533760C8562BF68BF476D549463B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		93228295286CC4B0D1C59395DAA77987 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				7F82356401B0ECE349892558A47D9AD0 /* LICENSE */,
+				3B26F30AE90BC79AB312542864DAEC49 /* MinimalNetworking.podspec */,
+				A7497621E886198AC830197E81ADB24C /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		AB946724668D6B2D3CBE0D6B035CD140 /* Pods-MinimalNetworking_Example */ = {
+			isa = PBXGroup;
+			children = (
+				5EC13F7A4109653CE6CB9243C9357682 /* Info.plist */,
+				48E50E230C850B8A74C51464919B6B69 /* Pods-MinimalNetworking_Example.modulemap */,
+				9DD59BC848A59FE886CAB7D5F563037E /* Pods-MinimalNetworking_Example-acknowledgements.markdown */,
+				675F73BB8BC678C061D5508B935C581A /* Pods-MinimalNetworking_Example-acknowledgements.plist */,
+				8DE5088E9C95D1055D8FC50AD801C0E2 /* Pods-MinimalNetworking_Example-dummy.m */,
+				ADC0252796B7FEAF7707D2CCD6164B07 /* Pods-MinimalNetworking_Example-frameworks.sh */,
+				FDFA92F2F43E2C09F761989440FEF136 /* Pods-MinimalNetworking_Example-resources.sh */,
+				33A0D2077BD8B4FE4E42DD8A5DDC3D03 /* Pods-MinimalNetworking_Example-umbrella.h */,
+				A9855E2FF6745158C791FE972E55BBEC /* Pods-MinimalNetworking_Example.debug.xcconfig */,
+				EAC2724618DE2E3368D5052DB24E1766 /* Pods-MinimalNetworking_Example.release.xcconfig */,
+			);
+			name = "Pods-MinimalNetworking_Example";
+			path = "Target Support Files/Pods-MinimalNetworking_Example";
+			sourceTree = "<group>";
+		};
+		B4F0CE9A58AFD4F6A8624E0EFF1267A8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4BEF14197BCA12B069E4873DEF1CF0C3 /* Info.plist */,
+				DECD7E462840A96D35576FF9647A523D /* MinimalNetworking.modulemap */,
+				22CD553306308C3C191C288AD56C5A72 /* MinimalNetworking.xcconfig */,
+				6F438B5F47FDC14E89EBD0448C082781 /* MinimalNetworking-dummy.m */,
+				D931B37D818ABD0DF275B4E8FBA36771 /* MinimalNetworking-prefix.pch */,
+				C1105F2CD597304CC7FA819361E24BBB /* MinimalNetworking-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MinimalNetworking";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E824A498F5D8C86D596211277BD748AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D57BEF72FAC26487A1A88E5F780D4413 /* MinimalNetworking.framework */,
+				352DE043A85A629AACA34473E387A78F /* Pods_MinimalNetworking_Example.framework */,
+				8E0A560F22B6EFD321A4F227F9F946D4 /* Pods_MinimalNetworking_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E89ADEC78A23BD55693CE206F8D7B518 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3966B3F13E37108306AA4C9EDD27127D /* MinimalNetworking */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		F2B2533760C8562BF68BF476D549463B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB946724668D6B2D3CBE0D6B035CD140 /* Pods-MinimalNetworking_Example */,
+				FDA6DDE2D9519D941F1A54A7149CA570 /* Pods-MinimalNetworking_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FDA6DDE2D9519D941F1A54A7149CA570 /* Pods-MinimalNetworking_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				89770968C27D4F694FFF880553646C8C /* Info.plist */,
+				0D3B6FDA74147A9B18FD691B1A91DF7A /* Pods-MinimalNetworking_Tests.modulemap */,
+				6A126C9CD7AD0133FD12D9F261E32E00 /* Pods-MinimalNetworking_Tests-acknowledgements.markdown */,
+				DEAEEB44812F99B8D647C18B7FADF5C5 /* Pods-MinimalNetworking_Tests-acknowledgements.plist */,
+				61C594A42361A83703B6591751C39B98 /* Pods-MinimalNetworking_Tests-dummy.m */,
+				A31DB5CCB88B7591503A60677B361A71 /* Pods-MinimalNetworking_Tests-frameworks.sh */,
+				941B410FC6AF3B5381D9B98E985E8DBC /* Pods-MinimalNetworking_Tests-resources.sh */,
+				F17CE5A7A7CA091A1B20D835584D32EE /* Pods-MinimalNetworking_Tests-umbrella.h */,
+				507B4C880EE3D2147603296BE4AD30C1 /* Pods-MinimalNetworking_Tests.debug.xcconfig */,
+				18C06E37F34BE560E5F44D2AD39647D5 /* Pods-MinimalNetworking_Tests.release.xcconfig */,
+			);
+			name = "Pods-MinimalNetworking_Tests";
+			path = "Target Support Files/Pods-MinimalNetworking_Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0226E130B6C7BE16774EBECB76C6B391 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BEA6C61E6FCD1AE96C699BDEA87961E /* MinimalNetworking-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A10F134EC7573D1086A0A355F766737D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1023A0A2E20B744D583D5F0CE6A5DC5F /* Pods-MinimalNetworking_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E658EB3A94B61C31D6294157634F0F3F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF91FBBF9A878DD8DC28B21BD05B0722 /* Pods-MinimalNetworking_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0B17542176CD3E6D4429E1880AF38CAF /* Pods-MinimalNetworking_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2621C5EF11C4EDB764DD13FAA24C2F55 /* Build configuration list for PBXNativeTarget "Pods-MinimalNetworking_Tests" */;
+			buildPhases = (
+				5A72F2928AB324C855C30CDEC946D707 /* Sources */,
+				FD84FA3457696A027C58C8D01C2D7E92 /* Frameworks */,
+				A10F134EC7573D1086A0A355F766737D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-MinimalNetworking_Tests";
+			productName = "Pods-MinimalNetworking_Tests";
+			productReference = 8E0A560F22B6EFD321A4F227F9F946D4 /* Pods_MinimalNetworking_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		39B5A7692A3A37B8709B369D5BDD862A /* MinimalNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D84E3919CDA3E96E71C45882999E7A38 /* Build configuration list for PBXNativeTarget "MinimalNetworking" */;
+			buildPhases = (
+				2F16412066BECA31B86C324A49C567B8 /* Sources */,
+				F066C5D1252046FAB4C41F8C3A3CD83F /* Frameworks */,
+				0226E130B6C7BE16774EBECB76C6B391 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MinimalNetworking;
+			productName = MinimalNetworking;
+			productReference = D57BEF72FAC26487A1A88E5F780D4413 /* MinimalNetworking.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F1223E8AD0372E9CDFE4A3C3A6ABEA93 /* Pods-MinimalNetworking_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A60D15518F6DED0C3834C85E0EAEB532 /* Build configuration list for PBXNativeTarget "Pods-MinimalNetworking_Example" */;
+			buildPhases = (
+				2743BDFFDEE85D60588C6CABDD207900 /* Sources */,
+				63AC5410E0BAD0B9BD68E051BECA0F39 /* Frameworks */,
+				E658EB3A94B61C31D6294157634F0F3F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38CE0298B1162CE3BC48CE57A561A948 /* PBXTargetDependency */,
+			);
+			name = "Pods-MinimalNetworking_Example";
+			productName = "Pods-MinimalNetworking_Example";
+			productReference = 352DE043A85A629AACA34473E387A78F /* Pods_MinimalNetworking_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = E824A498F5D8C86D596211277BD748AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39B5A7692A3A37B8709B369D5BDD862A /* MinimalNetworking */,
+				F1223E8AD0372E9CDFE4A3C3A6ABEA93 /* Pods-MinimalNetworking_Example */,
+				0B17542176CD3E6D4429E1880AF38CAF /* Pods-MinimalNetworking_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2743BDFFDEE85D60588C6CABDD207900 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3954D906573C57BFE155EB15A7C46B6A /* Pods-MinimalNetworking_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F16412066BECA31B86C324A49C567B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5AA77231ABA641A771B1F5EB6C77CF8 /* HttpResponseParserProtocol.swift in Sources */,
+				DE98D9F5C21DF1F5922A860FA9A7116B /* HttpService.swift in Sources */,
+				4191E7DE0079AD3C1DBDCA18669ABDFA /* HttpServiceProtocol.swift in Sources */,
+				74A97BF43F379B5DB2A7B706F74EC998 /* JsonParser.swift in Sources */,
+				27EC73CCF128320E4F4B923FB97BD6FA /* MinimalNetworking-dummy.m in Sources */,
+				1927B6A600C13C21F07C6B5BF560667C /* ParserFactory.swift in Sources */,
+				9B2C2310A1FC7825464195F7499FB4B8 /* POSTBodyEncodable.swift in Sources */,
+				C805820FB6B0A322143BB71122FA050B /* URLSessionDataTaskProtocol.swift in Sources */,
+				4F0C639E1475F371EBA8C41980FD15CE /* URLSessionProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A72F2928AB324C855C30CDEC946D707 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC21BE63AA8E9F73B4E2CC09B0B649CF /* Pods-MinimalNetworking_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		38CE0298B1162CE3BC48CE57A561A948 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MinimalNetworking;
+			target = 39B5A7692A3A37B8709B369D5BDD862A /* MinimalNetworking */;
+			targetProxy = 111DD885E2C1B1FC94905446C1C45A0B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		029EBB9318128DF062A8EE586881787E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9855E2FF6745158C791FE972E55BBEC /* Pods-MinimalNetworking_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MinimalNetworking_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MinimalNetworking_Example/Pods-MinimalNetworking_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MinimalNetworking_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		411CFD421615155A852B9B8B0B4D16F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAC2724618DE2E3368D5052DB24E1766 /* Pods-MinimalNetworking_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MinimalNetworking_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MinimalNetworking_Example/Pods-MinimalNetworking_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MinimalNetworking_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5011B865762FC0C0A28ECEC4CB63DC68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		827269710C98D60C14D46BC6AF9BF728 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8A5144227DCF78546D41E4884BB011BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22CD553306308C3C191C288AD56C5A72 /* MinimalNetworking.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MinimalNetworking/MinimalNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MinimalNetworking/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MinimalNetworking/MinimalNetworking.modulemap";
+				PRODUCT_NAME = MinimalNetworking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		93B1638943F2786B12A711AC72EAA83D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18C06E37F34BE560E5F44D2AD39647D5 /* Pods-MinimalNetworking_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MinimalNetworking_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MinimalNetworking_Tests/Pods-MinimalNetworking_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MinimalNetworking_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E1CE430C31B326FE3858210F7D71208C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 507B4C880EE3D2147603296BE4AD30C1 /* Pods-MinimalNetworking_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MinimalNetworking_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MinimalNetworking_Tests/Pods-MinimalNetworking_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MinimalNetworking_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F8E6D41D6DFC966DF9158A16EF74B65B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22CD553306308C3C191C288AD56C5A72 /* MinimalNetworking.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MinimalNetworking/MinimalNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MinimalNetworking/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MinimalNetworking/MinimalNetworking.modulemap";
+				PRODUCT_NAME = MinimalNetworking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2621C5EF11C4EDB764DD13FAA24C2F55 /* Build configuration list for PBXNativeTarget "Pods-MinimalNetworking_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1CE430C31B326FE3858210F7D71208C /* Debug */,
+				93B1638943F2786B12A711AC72EAA83D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5011B865762FC0C0A28ECEC4CB63DC68 /* Debug */,
+				827269710C98D60C14D46BC6AF9BF728 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A60D15518F6DED0C3834C85E0EAEB532 /* Build configuration list for PBXNativeTarget "Pods-MinimalNetworking_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				029EBB9318128DF062A8EE586881787E /* Debug */,
+				411CFD421615155A852B9B8B0B4D16F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D84E3919CDA3E96E71C45882999E7A38 /* Build configuration list for PBXNativeTarget "MinimalNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8E6D41D6DFC966DF9158A16EF74B65B /* Debug */,
+				8A5144227DCF78546D41E4884BB011BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
