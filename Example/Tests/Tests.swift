@@ -13,9 +13,13 @@ class Tests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func testExample_pass() {
         // This is an example of a functional test case.
         XCTAssert(true, "Pass")
+    }
+    
+    func testExample_fail() {
+        XCTAssert(false, "Fail")
     }
     
     func testPerformanceExample() {
