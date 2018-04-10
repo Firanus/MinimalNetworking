@@ -7,7 +7,7 @@
 //
 
 import Foundation
-@testable import MinimalNetworking
+import MinimalNetworking
 
 class URLSessionMock: URLSession {
     var nextDataTask = URLSessionDataTaskMock()
