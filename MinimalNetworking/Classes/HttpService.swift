@@ -86,9 +86,9 @@ public class HttpService {
         guard let httpResponse = optionalUrlResponse as? HTTPURLResponse else {
             throw NetworkingServiceError.responseInvalid
         }
-//        guard 200 ... 299 ~= httpResponse.statusCode else {
-//            throw NetworkingServiceError.statusCode(httpResponse.statusCode)
-//        }
+        guard 200 ... 399 ~= httpResponse.statusCode else {
+            throw NetworkingServiceError.statusCode(httpResponse.statusCode)
+        }
         
         switch responseContentType {
         case .empty:

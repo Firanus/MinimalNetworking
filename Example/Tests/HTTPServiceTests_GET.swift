@@ -133,7 +133,7 @@ class HTTPServiceTests_GET: XCTestCase {
         XCTAssertNotNil(error)
     }
     
-    func test_GET_InvalidStatusCode_ReturnsStatusCodeError() {
+    func test_GET_500StatusCode_ReturnsStatusCodeError() {
         let expectedCode = 500
         session.nextResponse = HTTPURLResponse(url: URL(string: urlString)!, statusCode: expectedCode, httpVersion: nil, headerFields: nil)
         
