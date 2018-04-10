@@ -13,10 +13,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let httpService = HttpService()
-        httpService.get(url: "https://www.foaas.com/version", responseContentType: ResponseContentType.json, completion: { (myParam: NetworkResponse<String?>) in
-            print(myParam)
-        })
         // Do any additional setup after loading the view, typically from a nib.
     }
 
