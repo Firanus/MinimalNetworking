@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,13 +19,78 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7vi-92-WFP">
+                                <rect key="frame" x="24" y="52" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Cxe-8m-a9d"/>
+                                    <constraint firstAttribute="height" constant="100" id="YPv-Gk-yHC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="GET">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchGetButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ggv-Be-fNR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1d-oh-LyF">
+                                <rect key="frame" x="24" y="415" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="KzJ-6u-ref"/>
+                                    <constraint firstAttribute="width" constant="100" id="MHr-CP-3hm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="POST">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchPostButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2sP-HG-TzB"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rOJ-Om-6X4">
+                                <rect key="frame" x="132" y="52" width="235" height="355"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="y0D-Jf-yxm">
+                                <rect key="frame" x="132" y="415" width="235" height="355"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7vi-92-WFP" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="8" id="32X-QH-oeh"/>
+                            <constraint firstItem="rOJ-Om-6X4" firstAttribute="leading" secondItem="7vi-92-WFP" secondAttribute="trailing" constant="8" id="7oV-k4-QLm"/>
+                            <constraint firstItem="y0D-Jf-yxm" firstAttribute="leading" secondItem="c1d-oh-LyF" secondAttribute="trailing" constant="8" id="92o-ii-JfR"/>
+                            <constraint firstAttribute="trailing" secondItem="y0D-Jf-yxm" secondAttribute="trailing" constant="8" id="Dhk-Ri-yuS"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="y0D-Jf-yxm" secondAttribute="bottom" constant="8" id="KSW-nN-ApM"/>
+                            <constraint firstItem="c1d-oh-LyF" firstAttribute="top" secondItem="y0D-Jf-yxm" secondAttribute="top" id="NGZ-jw-Zak"/>
+                            <constraint firstAttribute="trailing" secondItem="rOJ-Om-6X4" secondAttribute="trailing" constant="8" id="TFx-Cy-kT6"/>
+                            <constraint firstItem="c1d-oh-LyF" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="8" id="bON-2Y-4KK"/>
+                            <constraint firstItem="7vi-92-WFP" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="fRZ-e8-Ubh"/>
+                            <constraint firstItem="rOJ-Om-6X4" firstAttribute="leading" secondItem="7vi-92-WFP" secondAttribute="trailing" constant="8" id="hnZ-jj-wFH"/>
+                            <constraint firstItem="rOJ-Om-6X4" firstAttribute="height" secondItem="y0D-Jf-yxm" secondAttribute="height" id="jc5-Ng-eld"/>
+                            <constraint firstItem="y0D-Jf-yxm" firstAttribute="top" secondItem="rOJ-Om-6X4" secondAttribute="bottom" constant="8" id="q2H-yN-pWk"/>
+                            <constraint firstItem="rOJ-Om-6X4" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="rOW-tg-Idh"/>
+                            <constraint firstItem="y0D-Jf-yxm" firstAttribute="leading" secondItem="c1d-oh-LyF" secondAttribute="trailing" constant="8" id="ypc-Al-9MV"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="getTextView" destination="rOJ-Om-6X4" id="Gdh-vJ-xN5"/>
+                        <outlet property="postTextView" destination="y0D-Jf-yxm" id="oZi-S0-hzW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-98.400000000000006" y="117.48768472906404"/>
         </scene>
     </scenes>
 </document>
