@@ -37,6 +37,7 @@ class HTTPServiceTests_GET: XCTestCase {
         var error: NetworkingServiceError?
         
         _ = subject.get(url: "", responseContentType: ResponseContentType.json, completion: { (responseObject: NetworkResponse<[String: String]?>) in
+            XCTAssert(Thread.isMainThread)
             error = TestUtilities.extractError(from: responseObject, ofType: NetworkingServiceError.invalidURL) as? NetworkingServiceError
         })
         
@@ -47,6 +48,7 @@ class HTTPServiceTests_GET: XCTestCase {
         var error: NetworkingServiceError?
         
         _ = subject.get(url: "https://😂.lol", responseContentType: ResponseContentType.json, completion: { (responseObject: NetworkResponse<[String: String]?>) in
+            XCTAssert(Thread.isMainThread)
             error = TestUtilities.extractError(from: responseObject, ofType: NetworkingServiceError.invalidURL) as? NetworkingServiceError
         })
         
@@ -60,6 +62,18 @@ class HTTPServiceTests_GET: XCTestCase {
         _ = subject.get(url: urlString, responseContentType: ResponseContentType.empty) { (response : NetworkResponse<[String: String]?>) -> Void in }
         
         XCTAssert(dataTask.resumeCalled)
+    }
+    
+    func test_GET_CompletionRunsOnMainThread() {
+        let expectation = XCTestExpectation(description: "Completion block runs on main thread")
+        
+        _ = subject.get(url: urlString, responseContentType: ResponseContentType.empty) { (response : NetworkResponse<[String: String]?>) -> Void in
+            XCTAssert(Thread.isMainThread)
+            
+            expectation.fulfill()
+        }
+        
+        wait(for: [expectation], timeout: 5.0)
     }
     
     func test_GET_WithResponseData_ReturnsDecodedData() {

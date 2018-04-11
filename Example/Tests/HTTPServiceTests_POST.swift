@@ -48,6 +48,7 @@ class HTTPServiceTests_POST: XCTestCase {
         var error: NetworkingServiceError?
         
         _ = subject.post(url: "", body: body, responseContentType: ResponseContentType.json, completion: { (responseObject: NetworkResponse<[String: String]?>) in
+            XCTAssert(Thread.isMainThread)
             error = TestUtilities.extractError(from: responseObject, ofType: NetworkingServiceError.invalidURL) as? NetworkingServiceError
         })
         
@@ -58,6 +59,7 @@ class HTTPServiceTests_POST: XCTestCase {
         var error: NetworkingServiceError?
         
         _ = subject.post(url: "https://😂.lol", body: body, responseContentType: ResponseContentType.json, completion: { (responseObject: NetworkResponse<[String: String]?>) in
+            XCTAssert(Thread.isMainThread)
             error = TestUtilities.extractError(from: responseObject, ofType: NetworkingServiceError.invalidURL) as? NetworkingServiceError
         })
         
@@ -77,6 +79,18 @@ class HTTPServiceTests_POST: XCTestCase {
         _ = subject.post(url: urlString, body: body, responseContentType: ResponseContentType.empty) { (response : NetworkResponse<[String: String]?>) -> Void in }
         
         XCTAssert(session.lastRequest?.httpBody == Data(body.nextBody.utf8))
+    }
+    
+    func test_GET_CompletionRunsOnMainThread() {
+        let expectation = XCTestExpectation(description: "Completion block runs on main thread")
+        
+        _ = subject.post(url: urlString, body: body, responseContentType: ResponseContentType.empty) { (response : NetworkResponse<[String: String]?>) -> Void in
+            XCTAssert(Thread.isMainThread)
+            
+            expectation.fulfill()
+        }
+        
+        wait(for: [expectation], timeout: 5.0)
     }
     
     func test_POST_WithResponseData_ReturnsDecodedData() {
