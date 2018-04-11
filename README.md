@@ -27,13 +27,11 @@ _ = httpService.get(url: "url_to_hit",
                     responseContentType: ResponseContentType.json, 
                     additionalHeaders: ["Accept": "application/json"]) 
 { (networkResponse: NetworkResponse<ParsedServerData?>) in
-    DispatchQueue.main.async {
-        switch networkResponse {
-        case .success(let parsedData, let response):
-            //use your data
-        case .failure(let error):
-            //handle the error
-        }
+    switch networkResponse {
+    case .success(let parsedData, let response):
+        //use your data
+    case .failure(let error):
+        //handle the error
     }
 }
 ```

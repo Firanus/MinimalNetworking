@@ -48,6 +48,7 @@ class HTTPServiceTests_POST: XCTestCase {
         var error: NetworkingServiceError?
         
         _ = subject.post(url: "", body: body, responseContentType: ResponseContentType.json, completion: { (responseObject: NetworkResponse<[String: String]?>) in
+            XCTAssert(Thread.isMainThread)
             error = TestUtilities.extractError(from: responseObject, ofType: NetworkingServiceError.invalidURL) as? NetworkingServiceError
         })
         
@@ -58,6 +59,7 @@ class HTTPServiceTests_POST: XCTestCase {
         var error: NetworkingServiceError?
         
         _ = subject.post(url: "https://😂.lol", body: body, responseContentType: ResponseContentType.json, completion: { (responseObject: NetworkResponse<[String: String]?>) in
+            XCTAssert(Thread.isMainThread)
             error = TestUtilities.extractError(from: responseObject, ofType: NetworkingServiceError.invalidURL) as? NetworkingServiceError
         })
         
@@ -79,10 +81,22 @@ class HTTPServiceTests_POST: XCTestCase {
         XCTAssert(session.lastRequest?.httpBody == Data(body.nextBody.utf8))
     }
     
-    //Sam, should I inject the parser dependency to isolate what this test is testing?
+    func test_GET_CompletionRunsOnMainThread() {
+        let expectation = XCTestExpectation(description: "Completion block runs on main thread")
+        
+        _ = subject.post(url: urlString, body: body, responseContentType: ResponseContentType.empty) { (response : NetworkResponse<[String: String]?>) -> Void in
+            XCTAssert(Thread.isMainThread)
+            
+            expectation.fulfill()
+        }
+        
+        wait(for: [expectation], timeout: 5.0)
+    }
+    
     func test_POST_WithResponseData_ReturnsDecodedData() {
         let encoder = JSONEncoder()
         let expectedData = ["string": "Hello World"]
+        let expectation = XCTestExpectation(description: "Gets and Decodes response data")
         
         session.nextData = try! encoder.encode(expectedData)
         
@@ -92,12 +106,16 @@ class HTTPServiceTests_POST: XCTestCase {
             switch responseObject {
             case .success(let decodedData, _):
                 actualData = decodedData
+                
+                XCTAssert(expectedData == actualData)
+                
+                expectation.fulfill()
             default:
                 break
             }
         })
         
-        XCTAssert(expectedData == actualData)
+        wait(for: [expectation], timeout: 5.0)
     }
     
     func test_POST_WithResponseData_CannotDecodeData_ReturnsError() {
@@ -113,42 +131,57 @@ class HTTPServiceTests_POST: XCTestCase {
         let encoder = JSONEncoder()
         let expectedData = MyStringType(myString: "Hello world")
         session.nextData = try! encoder.encode(expectedData)
+        let expectation = XCTestExpectation(description: "Failed to decode response data and errored")
         
         var error: DecodingError?
         
         _ = subject.post(url: urlString, body: body, responseContentType: ResponseContentType.json, completion: { (responseObject: NetworkResponse<MyIntType?>) in
             error = TestUtilities.extractError(from: responseObject) as? DecodingError
+            
+            XCTAssertNotNil(error)
+            
+            expectation.fulfill()
         })
         
-        XCTAssertNotNil(error)
+        wait(for: [expectation], timeout: 5.0)
     }
     
     func test_POST_WithANetworkError_ReturnsANetworkError() {
         session.nextError = NetworkingServiceError.testNetworkError
         
         var error: Error? = nil
+        let expectation = XCTestExpectation(description: "Returned network error")
         
         _ = subject.post(url: urlString, body: body, responseContentType: ResponseContentType.json, completion: { (responseObject: NetworkResponse<[String: String]?>) in
             switch responseObject {
             case .failure(let networkError):
                 error = networkError
+                
+                XCTAssertNotNil(error)
+                
+                expectation.fulfill()
             default:
                 break
             }
         })
         
-        XCTAssertNotNil(error)
+        wait(for: [expectation], timeout: 5.0)
     }
     
     func test_POST_InvalidResponse_ReturnsInvalidResponseError() {
         session.nextResponse = nil
         
         var error: NetworkingServiceError?
+        let expectation = XCTestExpectation(description: "Returned invalid response error")
         _ = subject.post(url: urlString, body: body, responseContentType: ResponseContentType.json, completion: { (responseObject: NetworkResponse<[String: String]?>) in
             error = TestUtilities.extractError(from: responseObject, ofType: NetworkingServiceError.responseInvalid) as? NetworkingServiceError
+            
+            XCTAssertNotNil(error)
+            
+            expectation.fulfill()
         })
         
-        XCTAssertNotNil(error)
+        wait(for: [expectation], timeout: 5.0)
     }
     
     func test_POST_InvalidStatusCode_ReturnsStatusCodeError() {
@@ -156,39 +189,54 @@ class HTTPServiceTests_POST: XCTestCase {
         session.nextResponse = HTTPURLResponse(url: URL(string: urlString)!, statusCode: expectedCode, httpVersion: nil, headerFields: nil)
         
         var error: NetworkingServiceError?
+        let expectation = XCTestExpectation(description: "Returned status code error with appropriate status code")
         
         _ = subject.post(url: urlString, body: body, responseContentType: ResponseContentType.json, completion: { (responseObject: NetworkResponse<[String: String]?>) in
             error = TestUtilities.extractError(from: responseObject, ofType: NetworkingServiceError.statusCode(expectedCode)) as? NetworkingServiceError
+            
+            XCTAssertNotNil(error)
+            
+            expectation.fulfill()
         })
         
-        XCTAssertNotNil(error)
+        wait(for: [expectation], timeout: 5.0)
     }
     
     func test_POST_EmptyDataReturnedWhenExpectingJSON_ReturnsEmptyDataError() {
         var error: NetworkingServiceError?
+        let expectation = XCTestExpectation(description: "Returned empty data error")
         
         _ = subject.post(url: urlString, body: body, responseContentType: ResponseContentType.json, completion: { (responseObject: NetworkResponse<[String: String]?>) in
             error = TestUtilities.extractError(from: responseObject, ofType: NetworkingServiceError.dataEmpty) as? NetworkingServiceError
+            
+            XCTAssertNotNil(error)
+            
+            expectation.fulfill()
         })
         
-        XCTAssertNotNil(error)
+        wait(for: [expectation], timeout: 5.0)
     }
     
     func test_POST_ExpectEmptyData_ReturnsNilInNetworkSuccess() {
         let expectedData: [String:String]? = nil
         
         var actualData: [String:String]? = [:]
+        let expectation = XCTestExpectation(description: "Returned nil when expected")
         
         _ = subject.post(url: urlString, body: body, responseContentType: ResponseContentType.empty, completion: { (responseObject: NetworkResponse<[String: String]?>) in
             switch responseObject {
             case .success(let decodedData, _):
                 actualData = decodedData
+                
+                XCTAssert(expectedData == actualData)
+                
+                expectation.fulfill()
             default:
                 break
             }
         })
         
-        XCTAssert(expectedData == actualData)
+        wait(for: [expectation], timeout: 5.0)
     }
     
     //    func testPerformanceExample() {
