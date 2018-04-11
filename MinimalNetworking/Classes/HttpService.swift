@@ -74,7 +74,9 @@ public class HttpService {
             } catch {
                 networkResponse = .failure(error)
             }
-            completion(networkResponse)
+            DispatchQueue.main.async {
+                completion(networkResponse)
+            }
         })
         return task
     }
