@@ -28,15 +28,13 @@ class ViewController: UIViewController {
         let httpService = HttpService()
         _ = httpService.get(url: "https://xkcd.com/info.0.json", responseContentType: ResponseContentType.json) { [weak self] (networkResponse: NetworkResponse<XkcdResponse?>) in
             
-            DispatchQueue.main.async {
-                switch networkResponse {
-                case .success(let xkcd, let response):
-                    self?.getTextView.text = xkcd?.alt
-                    print(response)
-                case .failure(let error):
-                    self?.getTextView.text = error.localizedDescription
-                    self?.getTextView.textColor = UIColor.red
-                }
+            switch networkResponse {
+            case .success(let xkcd, let response):
+                self?.getTextView.text = xkcd?.alt
+                print(response)
+            case .failure(let error):
+                self?.getTextView.text = error.localizedDescription
+                self?.getTextView.textColor = UIColor.red
             }
         }
     }
@@ -44,16 +42,14 @@ class ViewController: UIViewController {
         let httpService = HttpService()
         _ = httpService.post(url: "https://httpbin.org/post", body: PostQuery(), responseContentType: ResponseContentType.json) { [weak self] (networkResponse: NetworkResponse<PostResponse?>) in
             
-            DispatchQueue.main.async {
-                switch networkResponse {
-                case .success(let data, let response):
-                    self?.postTextView.text = data?.form.minimalNetworking
-                    print(response)
-                case .failure(let error):
-                    self?.postTextView.text = error.localizedDescription
-                    self?.postTextView.textColor = UIColor.red
-                    print(error)
-                }
+            switch networkResponse {
+            case .success(let data, let response):
+                self?.postTextView.text = data?.form.minimalNetworking
+                print(response)
+            case .failure(let error):
+                self?.postTextView.text = error.localizedDescription
+                self?.postTextView.textColor = UIColor.red
+                print(error)
             }
         }
     }
