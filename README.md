@@ -75,7 +75,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
-None! The repo is dependency free. :)
+MinimalNetworking requires iOS 9.3 or above. Update dem projects yo.
 
 ## Future
 
